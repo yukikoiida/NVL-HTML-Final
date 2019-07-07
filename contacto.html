@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <meta charset="utf-8">
+   <title>Scooby</title>
+   <style>
+       header{
+           background-color: blueviolet;
+           position: absolute;
+           top: 0;
+           width: 100%;
+           height: 40px;
+           color: white;
+       }
+       #barraNavegador ul{
+           list-style-type: none;
+           text-align: center;
+       }
+       #barraNavegador li{
+           display: inline;
+           text-align: center;
+           margin: 0 10px 0 0;
+       }
+       #barraNavegador a{
+            color: white;
+       }
+       footer{
+           background-color: blueviolet;
+           position: fixed;
+           bottom: 0;
+           width: 100%;
+           height: 40px;
+           color: white;
+       }
+       #pie ul{
+           list-style-type: none;
+           text-align: center;
+       }
+       #pie li{
+           display: inline;
+           text-align: center;
+           margin: 0 10px 0 0;
+       }
+       #pie img{
+           width: 20px;
+           height: 20px;
+       }
+       #pie a{
+           color: white;
+       }
+       body{
+           background-color:#FAEBFA;
+           color: blueviolet;
+       }
+       h1{
+           padding-top: 5%;
+           text-align: center;
+       }
+       input, select, textarea{
+           border-radius: 1em;
+           overflow: hidden;
+       }
+       #formulario{
+           text-align: center;
+       }
+       textarea{
+           height: 15em;
+           width: 500px;
+       }
+       input{
+           size:100;
+           width: 500px;
+       }
+       label{
+           display: inline-block;
+           width: 80px;
+       }
+       #consulta{
+           vertical-align: middle;
+       }
+       #boton{
+           width: 100px;
+           background-color: blueviolet;
+           color: white;
+       }
+   </style>
+ </head>
+ <body>
+   <div id="principal">
+        <header>
+
+            <div id="barraNavegador">
+                <ul>
+                    <li><a href="index.html">¿Quienes somos?</a></li>
+                    <li></li>
+                    <li><a href="servicios.html">Nuestros servicios</a></li>
+                    <li></li>
+                    <li><a href="precios.html">Precios</a></li>
+                    <li></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </header>
+        <div id="cuerpo">
+            <h1>¿Tienes algo que preguntarnos o sugerirnos?</h1>
+
+            <div id="formulario">
+                    <form method="POST">
+                            <div>
+                                <label for="nombre">Nombre </label><input id="nombre" type="text" name="nombre" required><br><br>
+                            </div>
+                            
+                            <div>
+                                <label for="apellidos">Apellidos </label><input id="apellidos" type="text" name="apellidos" required><br><br>
+                            </div>
+                            
+                            <div>
+                                <label for="email">Email </label><input id="email" type="email" name="email" required><br><br>
+                            </div>
+                            
+                            <div>
+                                <label for="teléfono">Teléfono </label><input id="telefono" type="tel" name="telefono"><br><br>
+                            </div>
+                                                   
+                            <div>
+                                <label for="consulta" id="consulta">Consulta</label>
+                                <textarea id="consulta" name="consulta" ></textarea><br>
+                            </div>
+                            <br><br>
+                            <div>
+                                <input type="submit" value="Enviar" id="boton">
+                            </div>
+        
+                        </form>
+            </div>
+        </div>
+
+        <div id="pie">
+                <footer>
+                        <ul>
+                            <li><a href="contacto.html">Contacto</a></li>
+                            <li></li>
+                            <li><a href="legal.html">Aviso Legal/cookies</a></li>
+                            <li></li>
+                            <li><a href="www.facebook.com"><img src="img/facebook.png"/></a></li>
+                            <li><a href="www.twitter.com"><img src="img/twitter.png"/></a></li>
+                            <li><a href="www.instagram.com"><img src="img/instagram.png"/></a></li>
+                            
+                        </ul>
+                    </footer>
+            </div>
+    </div>  
+ </body>
+</html>
